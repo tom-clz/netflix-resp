@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+#dailymotion{
+	padding-top:40px;
+}
+
+#dailymotion a,
+#dailymotion a:visited,
+#dailymotion a:link,
+#dailymotion a:hover {
+	color: #ffffff !important;
+	text-decoration: none;
+}
+
+#dailymotion .row-1 {
+	height: 5%;
+	padding-left: 3%;
+	padding-top: 3%;
+}
+
+#dailymotion .row-2 {
+	height: 50%;
+}
+
+#dailymotion .row-3 {
+	height: 45%;
+	padding-left: 3%;
+	padding-bottom: 3%;
+	overflow: hidden;
+}
+
+#dailymotion .overlay {
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	background: rgba(0, 0, 0, 0);
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0.05) 35%, rgba(0, 0, 0, 0.65) 48%, rgba(0, 0, 0, 0.85) 63%, rgba(0, 0, 0, 0.95) 78%, rgba(0, 0, 0, 1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(34%, rgba(0, 0, 0, 0)), color-stop(35%, rgba(0, 0, 0, 0.05)), color-stop(48%, rgba(0, 0, 0, 0.65)), color-stop(63%, rgba(0, 0, 0, 0.85)), color-stop(78%, rgba(0, 0, 0, 0.95)), color-stop(100%, rgba(0, 0, 0, 1)));
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0.05) 35%, rgba(0, 0, 0, 0.65) 48%, rgba(0, 0, 0, 0.85) 63%, rgba(0, 0, 0, 0.95) 78%, rgba(0, 0, 0, 1) 100%);
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0.05) 35%, rgba(0, 0, 0, 0.65) 48%, rgba(0, 0, 0, 0.85) 63%, rgba(0, 0, 0, 0.95) 78%, rgba(0, 0, 0, 1) 100%);
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0.05) 35%, rgba(0, 0, 0, 0.65) 48%, rgba(0, 0, 0, 0.85) 63%, rgba(0, 0, 0, 0.95) 78%, rgba(0, 0, 0, 1) 100%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0.05) 35%, rgba(0, 0, 0, 0.65) 48%, rgba(0, 0, 0, 0.85) 63%, rgba(0, 0, 0, 0.95) 78%, rgba(0, 0, 0, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+}
+
+#dailymotion p {
+	margin: 0;
+}
+
+#dailymotion .channel,
+#dailymotion .title,
+#dailymotion .time {
+	font-size: 1vw;
+	/*   white-space: normal; */
+}
+
+@media (min-width: 0px) and (max-width: 640px) {
+	#dailymotion .channel,
+	#dailymotion .title,
+	#dailymotion .time {
+		font-size: 4vw;
+	}
+	#dailymotion .fa-play-circle {
+		font-size: 12vw !important;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 1000px) {
+	#dailymotion .channel,
+	#dailymotion .title,
+	#dailymotion .time {
+		font-size: 2vw !important;
+	}
+	#dailymotion .fa-play-circle {
+		font-size: 8vw !important;
+	}
+}
+
+@media (min-width: 1001px) and (max-width: 1300px) {
+	#dailymotion .channel,
+	#dailymotion .title,
+	#dailymotion .time {
+		font-size: 1.5vw !important;
+	}
+	#dailymotion .fa-play-circle {
+		font-size: 5vw !important;
+	}
+}
+
+#dailymotion .play-button i.fa-play-circle {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	translateY(-50%);
+	font-size: 3vw;
+	color: #ffffff
+}
+
+#dailymotion {
+	position: relative
+}
+
+#dailymotion .owl-item {
+	margin: 10px 0;
+}
+
+#dailymotion .owl-item:hover {
+	z-index: 9999;
+	transform: scale(1.1);
+	transition: all .2s ease-in-out;
+}
+
+#dailymotion .owl-prev,
+#dailymotion .owl-next {
+	position: absolute;
+	height: 100px;
+	color: inherit;
+	background: none;
+	border: none;
+	z-index: 100;
+	display: block;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#dailymotion .owl-prev {
+	left: 0;
+}
+
+#dailymotion .owl-next {
+	right: 0;
+}
+
+#dailymotion i {
+	font-size: 3em;
+	color: #cecece;
+}
+
+#dailymotion .owl-theme .owl-nav [class*=owl-]:hover {
+	background: none;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#dailymotion .owl-theme .owl-prev.disabled,
+#dailymotion .owl-theme .owl-next.disabled {
+	display: none;
+}
